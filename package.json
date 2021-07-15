@@ -1,0 +1,22 @@
+{
+  "name": "backend-locations",
+  "version": "1.0.0",
+  "description": "Simple api to manage places",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iamouad/backend-challenge.git"
+  },
+  "author": "iamouad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Iamouad/backend-challenge/issues"
+  },
+  "homepage": "https://github.com/Iamouad/backend-challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
