@@ -4,8 +4,8 @@ const {body, validationResult} = require('express-validator')
 
 const Place = require('../../models/Place')
 
-// @route   GET api/places
-// @desc    get all places
+// @route   GET api/places?name=MIAMI
+// @desc    get places filtered by name, state, city
 // @access  Public
 router.get('/', 
 async (req, res) => {
@@ -14,10 +14,8 @@ async (req, res) => {
         const filters = req.query;
         const filteredPlaces = places.filter(place => {
           let isValid = true;
-          for (key in filters) {
-            console.log(key, place[key], filters[key]);
-            isValid = isValid && place[key] == filters[key];
-          }
+          for (key in filters)
+            isValid = isValid && place[key] == filters[key];     
           return isValid;
         });
         res.json(filteredPlaces);
@@ -98,7 +96,7 @@ async (req, res) => {
     
     try {
         await Place.findOneAndDelete({_id: req.params.place_id});
-        res.json("place deleted successfuly");
+        res.json({msg: "place deleted successfuly"});
 
     } catch (error) {
         console.error(error.message);

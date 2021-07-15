@@ -4,7 +4,9 @@
   "description": "Simple api to manage places",
   "main": "server.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "server": "nodemon start.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,8 @@
     "mongoose": "^5.13.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.3"
   }
 }
