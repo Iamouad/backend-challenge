@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/Iamouad/backend-challenge#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.0",
+    "mongoose": "^5.13.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   }
 }
