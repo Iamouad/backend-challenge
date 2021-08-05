@@ -5,14 +5,14 @@ I used Mongoose to connect to MongoDB atlas cluster (cloud).
 I used Jest as my test framework.
 
 ## Principal commands:
-
+**_npm install: to install dependencies indicated at package.json._**
 **_npm run server launch express server and expose apis (hot-mode reloading)._**
 **_npm run test:watch launch unit tests (hot-mode reloading)._**
 
 ### Docker config
 
 If you have docker installed, you need to build an image using dockerfile and start the backend container with these commands:
-**_docker build -t server-app_** .
+**_docker build -t server-app ._** .
 **_docker run -p 5000:5000 server-app_**.
 
 else you need to have node installed.
