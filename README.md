@@ -35,6 +35,6 @@ EndPoints:<br>
 // @desc UPDATE an existing place (update one or more attributes at the time given a place id)<br>
 // @access Public<br>
 
-// @route Delete api/places/:place_id
-// @desc delete a place
-// @access Public
+// @route Delete api/places/:place_id<br>
+// @desc delete a place<br>
+// @access Public<br>
