@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const {body, validationResult} = require('express-validator')
+const produce = require("../../kafka/producer")
 
 const Place = require('../../models/Place')
 
@@ -49,8 +50,8 @@ async (req, res) => {
             state,
             city
         });
-
-        await place.save();
+        produce(place)
+        //await place.save();
         res.json(place);
     } catch (error) {
         console.error(error.message);

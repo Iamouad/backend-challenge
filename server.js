@@ -1,11 +1,20 @@
 const express = require('express');
-const connectDB = require('./config/db');
+const functions = require('./config/db');
+const consume = require("./kafka/consumer")
 
 //initialise the app variable
 const app = express();
 
+
 //Connect db
-connectDB();
+//connectDB();
+//createTopic();
+functions.createTopic()
+
+// var placesList = []
+// placesList = consume(placesList)
+// for (var i = 0; i < placesList.length; i++) 
+//     console.log("Consumed => ", placesList[i])
 
 //Init middleware bodyparser
 app.use(express.json({extended: false}))
