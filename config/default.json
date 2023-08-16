@@ -1,4 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://iamouad:admin@devconnector.xaugd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://iamouad:admin@cluster0.bvsntkc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 }
 

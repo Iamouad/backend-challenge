@@ -17,4 +17,5 @@ COPY . .
 # Exports
 EXPOSE 5000
 
-CMD ["npm","start"]
+CMD ["sh", "-c",  "echo mongodb://$DB_USER:$DB_PASSWORD@$DB_HOST:$DB_PORT/; mongoURI=mongodb://$DB_USER:$DB_PASSWORD@$DB_HOST:$DB_PORT/ npm run server"]
+
