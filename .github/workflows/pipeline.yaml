@@ -3,8 +3,8 @@ name: CI/CD
 run-name: ${{ github.actor }} is launching a ci/cd on GitHub Actions 🚀
 on: [push]
 env:
-  TEST_TAG: docker.io/iamouad/mongo-express:test
-  LATEST_TAG: mongo-express:latest
+  TEST_TAG: mongo-express:test
+  LATEST_TAG: docker.io/iamouad/mongo-express:latest
 jobs:
   docker-build:
     runs-on: ubuntu-latest
